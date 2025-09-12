@@ -19,7 +19,8 @@ As QAs, understanding SQL is essential — it helps us **validate data**, **crea
 
 ---
 
-📢 **Follow me on [LinkedIn](https://www.linkedin.com/)** to stay updated on each post!  
+📢 **Follow me on [LinkedIn](https://www.linkedin.com/in/caroline-zocche-pless-b64627350/)** to stay updated on each post!  
 Let's learn and grow together 🚀
 
 ---
+
