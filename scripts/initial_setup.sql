@@ -23,3 +23,4 @@ VALUES
 ('Dust and Dreams', 'Nina', 'Park', 1997, 65, 214),
 ('Mirrored Souls', 'Tom', 'Simmons', 2005, 25, 356),
 ('The Forgotten Path', 'Mikael', 'Jonsson', 2003, 88, 298);
+
