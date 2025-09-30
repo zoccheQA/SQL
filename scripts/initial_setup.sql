@@ -24,3 +24,19 @@ VALUES
 ('Mirrored Souls', 'Tom', 'Simmons', 2005, 25, 356),
 ('The Forgotten Path', 'Mikael', 'Jonsson', 2003, 88, 298);
 
+
+-- nova table criada para conseguirmos usar A Função JOIN
+CREATE TABLE sales (
+  sale_id INT AUTO_INCREMENT PRIMARY KEY,
+  book_id INT,
+  sale_date DATE,
+  quantity_sold INT,
+  FOREIGN KEY (book_id) REFERENCES books(id)
+);
+
+INSERT INTO sales (book_id, sale_date, quantity_sold) VALUES
+(1, '2024-02-15', 10),
+(2, '2024-02-20', 5),
+(3, '2024-02-21', 8),
+(5, '2024-02-25', 15),
+(7, '2024-03-01', 3);
