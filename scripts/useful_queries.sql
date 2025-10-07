@@ -9,3 +9,12 @@ SELECT b.id, b.title, b.author_first_name, b.author_last_name,
 FROM books b
 INNER JOIN sales s ON b.id = s.book_id
 WHERE b.quantity_in_stock = 0;
+
+
+SELECT 
+ b.id,
+ b.title,
+ s.sale_id
+FROM books b
+LEFT JOIN sales s ON b.id = s.book_id
+WHERE s.sale_id IS NULL;
