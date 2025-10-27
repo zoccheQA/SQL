@@ -40,3 +40,14 @@ INSERT INTO sales (book_id, sale_date, quantity_sold) VALUES
 (3, '2024-02-21', 8),
 (5, '2024-02-25', 15),
 (7, '2024-03-01', 3);
+
+
+-- Duplicados EXATOS de títulos já existentes
+INSERT INTO books (title, author_first_name, author_last_name, year_published, quantity_in_stock, total_pages) VALUES
+('Shadows and Tales', 'Laura',  'Reed',    1999, 60, 198),
+('Echoes of the North', 'Mikael', 'Jonsson', 2015, 30, 280);
+
+-- Mesmos livros, mas com variações de espaço/letra maiúscula
+INSERT INTO books (title, author_first_name, author_last_name, year_published, quantity_in_stock, total_pages) VALUES
+('Shadows and Tales ', 'Laura',  'Reed',    1999, 60, 198),   -- espaço no final do título
+('echoes of the north', 'Mikael', 'JONSSON', 2015, 30, 280);  -- case diferente

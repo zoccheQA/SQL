@@ -18,3 +18,21 @@ SELECT
 FROM books b
 LEFT JOIN sales s ON b.id = s.book_id
 WHERE s.sale_id IS NULL;
+
+
+SELECT
+  title, author_first_name, author_last_name,
+  COUNT(*) AS duplicates
+FROM books
+GROUP BY title, author_first_name, author_last_name
+HAVING COUNT(*) > 1;
+
+
+SELECT
+  LOWER(TRIM(title))              AS norm_title,
+  LOWER(TRIM(author_first_name))  AS norm_author_first,
+  LOWER(TRIM(author_last_name))   AS norm_author_last,
+  COUNT(*) AS duplicates
+FROM books
+GROUP BY norm_title, norm_author_first, norm_author_last
+HAVING COUNT(*) > 1;
