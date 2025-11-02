@@ -36,3 +36,11 @@ SELECT
 FROM books
 GROUP BY norm_title, norm_author_first, norm_author_last
 HAVING COUNT(*) > 1;
+
+SELECT 
+  COUNT(*) AS total_books,
+  SUM(quantity_in_stock) AS total_stock,
+  AVG(quantity_in_stock) AS average_stock,
+  MAX(quantity_in_stock) AS highest_stock,
+  MIN(quantity_in_stock) AS lowest_stock
+FROM books;
